@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="terminal.css">
+  <title>Terminal</title>
+</head>
+<body>
+  <div class="terminal">
+    <div class="terminal-header">
+        <div class="terminal-button close"></div>
+        <div class="terminal-button maximize"></div>
+        <div class="terminal-button minimize"></div>
+        <div class="title">alpha-bash-80x25</div>
+    </div>
+    <div class="terminal-body">
+      <div class="terminal-text">
+        <span id="typed" style="white-space:pre;"></span>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <script type="text/javascript">
+    var typed = new Typed("#typed", {
+      strings: ['$ Start website\nIntilizing Website^1000\nFetching data...^1000\n`Welcome...`'],
+     typeSpeed: 70,
+     backSpeed: 0,
+     loop: true,
+
+  });
+  </script>
+</body>
+</html>
